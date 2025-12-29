@@ -1,4 +1,4 @@
-| Заголовок  | Предусловие | Шаги проверки | Ожидаемо | Статус прохождения
+| Заголовок  | Предусловие | Шаги проверки | Ожидаемый результат | Статус прохождения
 | :-------------: | :-------------: | :-------------: | :-------------: |  :-------------: |
 | Успешное создание объявления от пользователя с корректными данными | Headers request: Content-Type: application/json  | Отправить POST запрос {{baseUrl}}/api/1/item JSON тело с полями sellerID в диапазоне 111111-999999, name Valenki, price 30000, statistics{likes 0, viewCount 0, contacts 0} | 200 Ок | Failed
 | Корректная валидация типов: SellerID строкой | Headers request: Content-Type: application/json  | Отправить JSON тело с полем sellerID "111111" | 400 Bad | Passed
